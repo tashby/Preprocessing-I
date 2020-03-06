@@ -90,11 +90,12 @@ input[type=submit], button {
   background-color: @mainButtonColor;
   color: white;
   padding: 12px 20px;
+  font-size: 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  :hover {
-	background-color: mainButtonColor;
+  &:hover {
+	background-color: blue;
   }
 }
 
@@ -109,8 +110,12 @@ nav{
 	.spacedFlex();
 	a{
 		text-decoration: none;
-		color: mainButtonColor;
+		color: @mainButtonColor;
+		&:hover{
+			color: blue;
+		}
 	}
+	margin-top: 10px;
 }
 
 
@@ -173,4 +178,16 @@ li{
 	img{
 		padding:10px;
 	}
+
+	nav{
+		border-bottom: 1px dotted black;
+		a{
+			margin: 1%;
+			border-bottom: 1px dotted black;
+		}
+	}
+	#information{
+		display: none;
+	}
+	
   }
